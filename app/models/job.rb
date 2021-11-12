@@ -1,4 +1,4 @@
 class Job < ApplicationRecord
     has_many :employees
-    belongs_to :employer
+    has_one :employer
 end
