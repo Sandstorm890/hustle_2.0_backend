@@ -8,4 +8,5 @@
 
 employees = Employee.create([{first_name: "Jeff", last_name: "Jefferson"}, {first_name: "Mark", last_name: "Markerson"}])
 employers = Employer.create([{first_name: "Andy", last_name: "Anderson"}, {first_name: "Donald", last_name: "Duckerson"}])
-jobs = Job.create([{title: "Mowing", description: "Mow the lawn", employer_id: 1 }, {title: "Landscaping", description: "Move some rocks around", employer_id: 2}])
+jobs = Job.create([{title: "Mowing", description: "Mow the lawn"}, {title: "Landscaping", description: "Move some rocks around"}])
+employee_jobs = EmployeeJob.create([{job_id: 1, employee_id: 1}, {job_id: 1, employee_id: 2}])
