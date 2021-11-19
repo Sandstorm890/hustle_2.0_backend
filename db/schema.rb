@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_11_12_221744) do
+ActiveRecord::Schema.define(version: 2021_11_12_230253) do
 
   create_table "employee_jobs", force: :cascade do |t|
     t.integer "job_id"
@@ -33,6 +33,7 @@ ActiveRecord::Schema.define(version: 2021_11_12_221744) do
     t.text "about"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.integer "job_id"
   end
 
   create_table "jobs", force: :cascade do |t|
@@ -40,6 +41,7 @@ ActiveRecord::Schema.define(version: 2021_11_12_221744) do
     t.text "description"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.integer "employer_id"
   end
 
 end
